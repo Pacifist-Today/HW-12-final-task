@@ -8,7 +8,7 @@
         url('Montserrat-Regular.svg#Montserrat-Regular') format('svg');
     font-weight: normal;
     font-style: normal;
-    font-display: swap;
+    /*font-display: swap;*/
 }
 
 @font-face {
@@ -21,5 +21,5 @@
         url('Montserrat-Bold.svg#Montserrat-Bold') format('svg');
     font-weight: bold;
     font-style: normal;
-    font-display: swap;
+    /*font-display: swap;*/
 }

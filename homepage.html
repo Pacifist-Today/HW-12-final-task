@@ -4,8 +4,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="reset.css">
-        <link rel="stylesheet" type="text/css" href="fonts.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <!--<link rel="stylesheet" type="text/css" href="fonts.css">-->
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        
         <title>homepage</title>
     </head>
     <body>
@@ -81,11 +85,17 @@
                         </div>
                     </div>
                 </header>        
-                <!--<h1 class="provider">
+                <h1 class="provider">
                     you legal solutions provider
                 </h1>
                 <a href="#t1" class="scroll__link">
-                    <img src="images/Scroll.svg" alt="" class="scroll__img">
+                    <!--<img src="images/Scroll.svg" alt="" class="scroll__img">-->
+                    <div class="scroll__block">
+                        <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle opacity="0.5" cx="21" cy="21" r="20" stroke="white" stroke-width="2"/>
+                            <path d="M12 18L21 27L30 18" stroke="white" stroke-width="2"/>
+                        </svg>
+                    </div>
                 </a>
                 <div class="preferences" id="t1">
                     <nav class="preferences__nav">
@@ -124,14 +134,23 @@
                 <div class="services">
                     <a href class="services__name">
                         services
-                        <img src="images/Arrow2.svg" alt="" class="arrow-img">
+                        <!--<img src="images/Arrow.svg" alt="" class="arrow-img">-->
+                        <!--<div class="services__name-svg">-->
+                            <svg class="services__svg" width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="services__path" d="M3.5 2L8 6.5L3.5 11" stroke="#24A3FF" stroke-width="2"/>
+                            </svg>
+                        <!--</div>-->
                     </a>
+                <!--<div class="services__name-svg">
+                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.5 2L8 6.5L3.5 11" stroke="#24A3FF" stroke-width="2"/>
+                        </svg>
+                    </div>-->
                 </div>
-            
                 <h1 class="better">
                     What can we do better than others?
                 </h1>
-                <div class="opportunities">
+                <!--<div class="opportunities">
                     <div class="opportunities__card">
                         <div class="opportunities-img__block">
                             <img src="images/Icon-1.png" alt="" class="opportunities__img">
