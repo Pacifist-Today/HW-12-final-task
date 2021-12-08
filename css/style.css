@@ -3,7 +3,7 @@
 /*active colors*/
 /*grey colors*/
 /*gradient*/
-.hero, .slider__block-name, .better, .preferences__link, .provider {
+.hero, .telling, .slider__block-name, .better, .preferences__link, .provider {
   font-weight: bold;
   font-size: 38px;
   line-height: 46px;
@@ -23,7 +23,7 @@
   color: #323264;
 }
 
-.h3-caps, .trusting, .team, .services__name {
+.h3-caps, .publication__link, .trusting, .team, .services__name {
   font-weight: bold;
   font-size: 14px;
   line-height: 17px;
@@ -32,7 +32,7 @@
   color: #323264;
 }
 
-.h4, .slider__block-author, .pages__link, .phone {
+.h4, .footer__phone, .footer__street, .slider__block-author, .pages__link, .phone {
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
@@ -57,7 +57,7 @@
   color: #000000;
 }
 
-.link-regural {
+.link-regural, .contact-email, .news__name {
   font-size: 16px;
   line-height: 20px;
   color: #24A3FF;
@@ -725,6 +725,187 @@ body {
   background: #000000;
 }
 
+.container .news {
+  background: #F5F5FA;
+}
+
+.publication__link {
+  display: block;
+  margin-top: 30px;
+  text-decoration: none;
+  color: #24A3FF;
+}
+
+.telling {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* news */
+.news__block {
+  background: #F5F5FA;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.news__cards {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #E6E6F0;
+}
+
+.card__block {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #FFFFFF;
+}
+
+.card__block-photo {
+  width: 100%;
+}
+
+.card-img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.card__block-text {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+
+.news__name {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.news__date {
+  margin-top: 15px;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+  border-bottom: 4px solid #E6E6F0;
+}
+
+.news__describe {
+  margin-top: 15px;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+/* footer */
+.footer {
+  background: #F5F5FA;
+  padding-top: 30px;
+}
+
+.footer__block {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-area: "street__block copyright" "footer__contacts";
+}
+
+.street__block {
+  display: flex;
+  align-items: center;
+}
+
+.copyrights {
+  text-align: end;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: right;
+  color: #B3B3BA;
+}
+
+.footer__contacts {
+  display: flex;
+  margin-top: 21px;
+  width: max-content;
+}
+
+.footer__street {
+  position: relative;
+  font-weight: normal;
+  margin-right: 26px;
+}
+
+.footer__street::after {
+  content: "";
+  display: block;
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background-color: #B3B3BA;
+  position: absolute;
+  bottom: 8px;
+  right: -16px;
+}
+
+.on-map__link {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #24A3FF;
+}
+
+.facebook__footer {
+  position: relative;
+  margin-right: 26px;
+}
+
+.facebook__footer::after {
+  content: "";
+  display: block;
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background-color: #B3B3BA;
+  position: absolute;
+  bottom: 19px;
+  right: -16px;
+}
+
+.footer__phone {
+  margin-right: 26px;
+  position: relative;
+}
+
+.footer__phone::after {
+  content: "";
+  display: block;
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background-color: #B3B3BA;
+  position: absolute;
+  bottom: 9px;
+  right: -15px;
+}
+
+.contact-email {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.footer__contacts {
+  display: flex;
+  align-items: center;
+}
+
 @media (max-width: 1919px) {
   .container {
     width: auto;
@@ -796,6 +977,11 @@ body {
   .cooperating {
     width: 100%;
     overflow: visible;
+  }
+
+  .footer {
+    padding-left: 60px;
+    padding-right: 60px;
   }
 }
 @media (max-width: 1439px) {
@@ -955,6 +1141,34 @@ body {
   /* cooperating firms */
   .cooperating {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  /* news cards */
+  .news__cards {
+    grid-template-columns: 1fr 1fr;
+    grid-area: "card__block card__block";
+    grid-area: "card__block card__block";
+  }
+
+  .card__block:last-child {
+    width: 100%;
+  }
+
+  /* footer */
+  .footer__block {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .street__block {
+    margin-right: 76px;
+  }
+
+  .copyrights {
+    width: max-content;
+    display: flex;
+    text-align: end;
+    justify-content: flex-end;
   }
 }
 @media (max-width: 767px) {
@@ -1174,6 +1388,90 @@ body {
   /* cooperating firms */
   .cooperating {
     grid-template-columns: 1fr;
+  }
+
+  /* news cards */
+  .telling {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .news__block {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .news__cards {
+    grid-template-columns: 1fr;
+  }
+
+  /* footer */
+  .footer__block {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .footer__street {
+    margin: 0;
+  }
+
+  .street__block {
+    order: 1;
+    text-align: center;
+    justify-content: center;
+    margin-right: 0;
+    flex-direction: column;
+  }
+
+  .footer__street::after {
+    display: none;
+  }
+
+  .on-map__link {
+    margin-top: 10px;
+  }
+
+  .copyrights {
+    order: 3;
+    width: 280px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .footer__contacts {
+    order: 2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .facebook__footer {
+    margin: 0;
+  }
+
+  .facebook__footer::after {
+    display: none;
+  }
+
+  .footer__phone {
+    margin-right: 0;
+  }
+
+  .footer__phone::after {
+    display: none;
+  }
+
+  .facebook__footer {
+    margin-bottom: 10px;
+  }
+
+  .contact-email {
+    margin-top: 10px;
+    margin-bottom: 30px;
   }
 }
 
