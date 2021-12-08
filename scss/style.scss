@@ -22,6 +22,13 @@ body {
     margin:auto;
 }
 
+.container-smoother {
+    width:1720px;
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+}
+
 /*header*/
 
 /*
@@ -451,15 +458,12 @@ body {
 }*/
 
 .services__name:hover {
-    color: $accent;
-    
-    .services__name .services__svg .services__path{
-        stroke: #F0145A;
-        fill:red;
-    }
+    color:$accent;
 }
 
-
+.services__name:hover .services__path {
+    stroke: $accent;
+}
 
 /**.services .services__name:hover {
     color:$accent;
@@ -554,10 +558,80 @@ body {
 
 .shadow {
     width:100%;
+    margin-bottom:60px;
 
     &__svg {
         width:100%;
     }
+}
+
+/* slider */
+
+.slider__block {
+    display: flex;
+    flex-direction: row;
+}
+
+.slider__block-text {
+    flex-direction: column;
+    padding-left:30px;
+    padding-right:30px;
+    background: #F5F5FA;
+}
+
+.team {
+    margin-top:30px;
+    margin-bottom: 5px;
+    display: flex;
+    @extend .h3-caps;
+    color:$active;
+    text-decoration: none;
+}
+
+.slider__block-name {
+    @extend .hero;
+    margin-bottom:30px;
+    background: $gradient-red-text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.slider__block-author {
+    color:$grey-text;  
+    @extend .h4; 
+    margin-bottom:6px;
+}
+
+.slider__block-partner {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.slider.slick-initialized.slick-slider.slick-dotted {
+    margin-left:60px;
+    margin-right:60px;
+}
+
+/* trusting */
+
+.trusting {
+    @extend .h3-caps;
+    text-align: center;
+}
+
+/* cooperating firm */
+
+.cooperating {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "cooperating__block cooperating__block cooperating__block"
+    "cooperating__block cooperating__block cooperating__block"
+    "cooperating__block cooperating__block cooperating__block";
+
+.cooperating__block {
+    background-color: blue;
+}
 }
 
 @media (max-width:1919px) {
@@ -612,10 +686,21 @@ body {
     /* opportunity cards */
 
     .opportunities {
+        padding-left:60px;
+        padding-right:60px;
+    }
+
+    /* slider */
+
+    .information.container {
         margin-left:60px;
         margin-right:60px;
     }
 
+    .slider__block-photo-img {
+        height:344px;
+        width:400px;
+    }
 }
 
 @media (max-width:1439px) {
@@ -648,6 +733,13 @@ body {
 
     .shadow__svg {
         height:15px;
+    }
+
+    /* slider */
+
+    .slider__block-photo-img {
+        height:528px;
+        width:400px;
     }
 }
 
@@ -769,6 +861,17 @@ body {
     .shadow__svg {
         
         height:20px;
+    }
+
+    /* slider */
+
+    .slider__block {
+        flex-direction: column;
+    }
+
+    .slider__block-photo-img {
+        height:500px;
+        width:648px;
     }
 }
 
@@ -981,5 +1084,23 @@ body {
     margin-left:30px;
     margin-right:30px;
     margin-bottom:30px;
+    padding:0;
+}
+
+/* slider */
+
+.slider__block-photo-img {
+    height:500px;
+    width:315px;
+}
+
+.slider.slick-initialized.slick-slider.slick-dotted {
+    margin-left:30px;
+    margin-right:30px;
+}
+
+.slider__block-name {
+    font-size: 30px;
+    line-height: 37px;
 }
 }
