@@ -624,6 +624,7 @@ body {
 /* cooperating firm */
 
 .cooperating {
+    width:100%;
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -632,6 +633,8 @@ body {
     overflow:hidden;
     border-radius: 15px;
     margin-bottom:60px;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .cooperating__block {
@@ -755,6 +758,17 @@ body {
     .slider__block-photo-img {
         height:344px;
         width:400px;
+    }
+
+    /* cooperating firms */
+
+    .container-smoother {
+        width:100%;
+    }
+
+    .cooperating {
+        width:100%;
+        overflow:visible;
     }
 }
 
@@ -927,6 +941,12 @@ body {
     .slider__block-photo-img {
         height:500px;
         width:648px;
+    }
+
+    /* cooperating firms */
+
+    .cooperating {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
@@ -1157,5 +1177,11 @@ body {
 .slider__block-name {
     font-size: 30px;
     line-height: 37px;
+}
+
+/* cooperating firms */
+
+.cooperating {
+    grid-template-columns: 1fr;
 }
 }
