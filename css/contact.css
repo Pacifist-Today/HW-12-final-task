@@ -1,0 +1,304 @@
+/*colors main*/
+/*accent color*/
+/*active colors*/
+/*grey colors*/
+/*gradient*/
+.hero {
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 46px;
+}
+
+.h2, .help-you {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 37px;
+  color: #323264;
+}
+
+.h3 {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 27px;
+  color: #323264;
+}
+
+.h3-caps, .answering {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #323264;
+}
+
+.h4, .send-message {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #323264;
+}
+
+.paragraph, .mail__input, .phone__input, .message__input, .name__input {
+  font-size: 16px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.unordered-list {
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.ordered-list {
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.link-regural {
+  font-size: 16px;
+  line-height: 20px;
+  color: #24A3FF;
+}
+
+.link-hover {
+  font-size: 16px;
+  line-height: 20px;
+  color: #F0145A;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  margin: auto;
+}
+
+.contact-us {
+  padding: 120px auto;
+}
+
+.contacts-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 60px;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+.contacts-data {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts-place {
+  font-size: 21px;
+  line-height: 30px;
+  padding-bottom: 30px;
+  border-bottom: 4px solid #E6E6F0;
+}
+
+.contacts-call {
+  padding-bottom: 30px;
+  border-bottom: 4px solid #E6E6F0;
+  margin-top: 30px;
+}
+
+.contacts-phone {
+  font-size: 21px;
+  line-height: 30px;
+}
+
+.contacts-mail {
+  font-size: 21px;
+  line-height: 30px;
+  color: #24A3FF;
+}
+
+.contacts-onfacebook {
+  display: flex;
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #24A3FF;
+  align-items: center;
+}
+
+.contacts-onfacebook:hover {
+  color: #F0145A;
+}
+
+.contacts-onfacebook svg {
+  margin-right: 10px;
+}
+
+.contacts-onfacebook:hover .contacts-facebook-svg {
+  fill: #F0145A;
+}
+
+.contacts-menu {
+  padding: 30px;
+  background: #F5F5FA;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.help-you {
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 30px;
+}
+
+.name__input {
+  border: transparent;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  height: 56px;
+}
+
+.name__input::-webkit-input-placeholder {
+  padding-left: 15px;
+}
+
+.message__input {
+  position: relative;
+  border: transparent;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  height: 130px;
+}
+
+.message__input::-webkit-input-placeholder {
+  position: absolute;
+  padding-left: 15px;
+  padding-top: 15px;
+}
+
+.answering {
+  color: #B3B3BA;
+  margin-bottom: 15px;
+}
+
+.phone__input {
+  border: transparent;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  height: 56px;
+}
+
+.phone__input::-webkit-input-placeholder {
+  padding-left: 15px;
+}
+
+.mail__input {
+  border: transparent;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  height: 56px;
+}
+
+.mail__input::-webkit-input-placeholder {
+  padding-left: 15px;
+}
+
+.send-message {
+  color: #FFFFFF;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  border: transparent;
+  border-radius: 15px;
+  background: #24A3FF;
+  box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+}
+
+.send-message:hover {
+  background: #0085FF;
+}
+
+.send-message:active {
+  background: #006CCF;
+}
+
+.send-message:progress .circle {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 4px solid #24A3FF;
+  background: #EDEDF7;
+  border-right-color: transparent;
+  animation: rotate 1s infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  0% {
+    transform: rotate(-360deg);
+  }
+}
+
+.send-message:response {
+  background: #EDEDF7;
+  content: "Sent";
+}
+
+input:filled {
+  color: #000000;
+}
+
+input:focused {
+  border: #24A3FF;
+}
+
+input:invalid {
+  border: 1px solid #FF0000;
+  color: #FF0000;
+}
+
+input:disabled {
+  color: #B3B3BA;
+  background: #F5F5FA;
+}
+
+@media (max-width: 1919px) {
+  .container {
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .contacts-info {
+    padding: 0 120px;
+  }
+}
+@media (max-width: 1439px) {
+  .contacts-info {
+    padding: 0px 0;
+  }
+
+  .contacts-info {
+    padding: 0;
+  }
+}
+@media (max-width: 1023px) {
+  .container {
+    padding: 0;
+  }
+
+  .contacts-info {
+    grid-template-columns: 1fr;
+    padding: 0 30px;
+  }
+}
+
+/*# sourceMappingURL=contact.css.map */

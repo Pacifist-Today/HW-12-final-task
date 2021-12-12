@@ -626,6 +626,15 @@ body {
   text-decoration: none;
 }
 
+.team:hover {
+  color: #F0145A;
+}
+
+.team:hover .team__svg {
+  color: #F0145A;
+  stroke: #F0145A;
+}
+
 .slider__block-name {
   margin-bottom: 30px;
   background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
@@ -734,6 +743,14 @@ body {
   margin-top: 30px;
   text-decoration: none;
   color: #24A3FF;
+}
+
+.publication__link:hover {
+  color: #F0145A;
+}
+
+.publication__link:hover .publication__arrow {
+  stroke: #F0145A;
 }
 
 .telling {
@@ -1245,15 +1262,15 @@ body {
   }
   .pages__nav {
     position: fixed;
-    background-color: green;
+    background-color: #FFFFFF;
     padding-left: 12px;
     padding-right: 12px;
-    padding-top: 50px;
+    padding-top: 70px;
     padding-bottom: 12px;
     bottom: 0;
     left: 8px;
     right: 8px;
-    width: 100%;
+    width: auto;
     border-radius: 15px 15px 0 0;
     display: none;
   }
@@ -1263,8 +1280,8 @@ body {
   .pages__close {
     display: block;
     position: absolute;
-    top: 0;
-    right: 20px;
+    top: 18px;
+    right: 5px;
     background: transparent;
     border: transparent;
   }
@@ -1287,6 +1304,9 @@ body {
     color: #24A3FF;
     font-size: 24px;
     line-height: 30px;
+  }
+  .pages__link:hover {
+    color: #F0145A;
   }
 
   .languages__list::after {
@@ -1433,7 +1453,7 @@ body {
 
   .copyrights {
     order: 3;
-    width: 280px;
+    width: 100%;
     display: flex;
     text-align: center;
     justify-content: center;
