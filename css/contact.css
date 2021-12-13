@@ -73,21 +73,49 @@ a {
   text-decoration: none;
 }
 
+/* header */
 .container {
   display: flex;
   margin: auto;
 }
 
+.languages__link {
+  color: #B3B3BA;
+}
+
+.current__language {
+  color: #FFFFFF;
+}
+
+.street {
+  color: #B3B3BA;
+}
+
+.phone {
+  color: #B3B3BA;
+}
+
+.pages__link {
+  color: #24A3FF;
+}
+
+.current__page {
+  border-bottom: 2px solid #F0145A;
+  color: #F0145A;
+}
+
+/* contact form */
 .contact-us {
   padding: 120px auto;
+  margin: 60px 0;
 }
 
 .contacts-info {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 60px;
-  padding-left: 120px;
-  padding-right: 120px;
+  padding-left: 180px;
+  padding-right: 180px;
 }
 
 .contacts-data {
@@ -149,6 +177,7 @@ a {
   display: flex;
   flex-direction: column;
   border-radius: 10px;
+  position: relative;
 }
 
 .help-you {
@@ -159,28 +188,34 @@ a {
 }
 
 .name__input {
+  color: #000000;
   border: transparent;
   border-radius: 10px;
   margin-bottom: 15px;
   height: 56px;
-}
-
-.name__input::-webkit-input-placeholder {
   padding-left: 15px;
 }
 
+.name__input::-webkit-input-placeholder {
+  color: #B3B3BA;
+}
+
 .message__input {
-  position: relative;
+  color: #000000;
   border: transparent;
   border-radius: 10px;
   margin-bottom: 15px;
   height: 130px;
+  position: relative;
+  padding-left: 15px;
+  padding-bottom: 85px;
 }
 
 .message__input::-webkit-input-placeholder {
+  color: #B3B3BA;
   position: absolute;
-  padding-left: 15px;
-  padding-top: 15px;
+  top: 15px;
+  left: 15px;
 }
 
 .answering {
@@ -192,11 +227,13 @@ a {
   border: transparent;
   border-radius: 10px;
   margin-bottom: 15px;
+  padding-left: 15px;
   height: 56px;
+  color: #000000;
 }
 
 .phone__input::-webkit-input-placeholder {
-  padding-left: 15px;
+  color: #B3B3BA;
 }
 
 .mail__input {
@@ -204,10 +241,12 @@ a {
   border-radius: 10px;
   margin-bottom: 30px;
   height: 56px;
+  color: #000000;
+  padding-left: 15px;
 }
 
 .mail__input::-webkit-input-placeholder {
-  padding-left: 15px;
+  color: #B3B3BA;
 }
 
 .send-message {
@@ -273,21 +312,17 @@ input:disabled {
 @media (max-width: 1919px) {
   .container {
     width: 100%;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .contacts-info {
-    padding: 0 120px;
+    padding: 0 180px;
   }
 }
 @media (max-width: 1439px) {
   .contacts-info {
-    padding: 0px 0;
-  }
-
-  .contacts-info {
-    padding: 0;
+    padding: 0px 60px;
   }
 }
 @media (max-width: 1023px) {
@@ -297,7 +332,27 @@ input:disabled {
 
   .contacts-info {
     grid-template-columns: 1fr;
-    padding: 0 30px;
+  }
+}
+@media (max-width: 767px) {
+  .contacts-info {
+    padding: 0px 30px;
+  }
+
+  .communication {
+    background: #F5F5FA;
+  }
+
+  .logo__block {
+    margin-right: 240px;
+  }
+
+  .logo__img {
+    width: 166px;
+  }
+
+  .current__page {
+    border: none;
   }
 }
 
